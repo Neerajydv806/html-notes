@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            box-shadow: 15px 15px 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Hello World</h1>
+    <h1 id="name">hello</h1>
+    <div id="box"></div>
+    <script>
+        console.log("This is js from front end")
+        // for(let i=0; i<10; i++){
+        // console.log(i)
+        // console.log("This is Neeraj")
+        // }
+        let i=0;
+        // while(i<11)
+        // {
+        //   console.log(`This is while loop running ${i} times`)
+        //     i++;
+        // }
+        // let j=0;
+        // do {
+        //     console.log(`This is do loop running ${i} times`);
+        // } while(i<=10);
+       
+        const changeName=()=>{
+    document.getElementById("name").style.color=`blue`;
+}
+        const changeBox=()=>{
+    document.getElementById("box").style.backgroundColor=`blue`;
+    document.getElementById("box").style.borderRadius=`50%`;
+}
+   
+setTimeout(()=>{
+    changeName()
+    changeBox()
+},5000)
+const ages=[67,81,74,44,55,9,,10,12,43];
+console.log(ages.sort())
+console.log(ages.sort((a,b)=>a-b))
+const fruits = ["apple","Mango","Pine","grapes","papaya","banana"];
+for(let x in fruits){
+console.log(`I like to eat ${fruits[x]}`)
+
+// push
+fruits.push("orange")
+// pop
+fruits.pop()
+fruits.pop()
+}
+const vegetables = ["Potato","Tomato","Pine","spanish","brinzal","ladyfinger"];
+for(let x in vegetables){
+    console.log(`I like to eat ${vegetables[x]}`)
+}
+//mapping
+ages.map((x)=>{
+    console.log(`I am ${x} years old using map`)
+})
+//for each
+ages.forEach((x)=>{
+    console.log(`I am ${x} years old using for each`)
+})
+//filter
+const voters=ages.filter((age)=>age>18)
+console.log(voters)
+//filter
+const retired=ages.filter((age)=>age>60)
+console.log(retired)
+//slices in array
+const students=["Robin","Mohan","Sohan","Rohit","Meera","vaibhav"]
+const slicedArray=students.slice(2,6)
+console.log(slicedArray)
+//spices in array
+const spicedArray=students.splice(2,2,"selena","uday")
+console.log(students)
+//include
+const checkName=students.includes("Suraj")
+console.log(checkName)
+
+const sampleNegative=students.at(-4)
+console.log(sampleNegative)
+//let include float , double, string 
+//var
+//const
+//nested objects
+const car2={
+    name:"Audi",
+    model:"vi",
+    year:2011,
+    feature:{
+        color:["red","yellow","green"],
+        engine:"V0",
+        top_speed:`400km/hr`
+    }
+}
+const intro={
+    Firstname:"Neeraj",
+    lastname:"yadav",
+    class:"xii",
+
+  rollno.:"12"
+    }
+
+console.log(car2)
+console.log(intro)
+const name="Neeraj"
+    function myFunction(){
+         console.log(name)
+
+}
+myFunction()
+    </script>
+</body>
+</html>

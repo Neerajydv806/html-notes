@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 530px;
+            height: 550;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+ <div class="box">
+        <h1>My name is <span id="name">Sonu kumar</span></h1> 
+        <button onclick="ChangeName()">Change your name</button></div>
+        <script>
+            
+            const ChangeName=()=>{
+               try {
+                 const name = prompt("Enter your name")
+                document.getElementById("name").innerHTML=name
+            let box=document.getElementById("box")
+            box.style.backgroundColor="red";
+            box.style.padding="100px";
+               }
+            catch (error) {
+                console.log(error)
+            }
+            }</script>
+    
+</body>
+</html>
